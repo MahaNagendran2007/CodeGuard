@@ -1,0 +1,7 @@
+# CodeGuard: Source Code Plagiarism Detection System
+# Zero heavy dependencies — leverages Python standard library for core operation.
+
+# Optional: libclang for Clang C-Index AST parsing
+# Note: CodeGuard includes a robust built-in lexical/AST fallback analyzer 
+# that functions without libclang if not installed.
+libclang>=16.0.0
