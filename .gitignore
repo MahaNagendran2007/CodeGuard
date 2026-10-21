@@ -5,4 +5,8 @@ venv/
 .env
 .pytest_cache/
 .coverage
+<<<<<<< HEAD
 htmlcov/
+=======
+htmlcov/
+>>>>>>> 5272d223f86484d14677abc9e962df662e89c182
