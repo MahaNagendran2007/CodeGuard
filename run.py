@@ -139,7 +139,7 @@ def main():
         description="CodeGuard: Compiler-Based C/C++ Plagiarism Detection System"
     )
     parser.add_argument("--server", "-s", action="store_true", help="Launch web UI server")
-    parser.add_argument("--port", "-p", type=int, default=8080, help="Port for web server (default: 8080)")
+    parser.add_argument("--port", "-p", type=int, default=int(os.environ.get("PORT","8080")), help="Port for web server")
     parser.add_argument("--compare", "-c", nargs=2, metavar=("FILE_A", "FILE_B"), help="Compare two source files")
     parser.add_argument("--benchmarks", "-b", action="store_true", help="Run benchmark verification test pairs")
     parser.add_argument("--test", "-t", action="store_true", help="Run automated test suite")
